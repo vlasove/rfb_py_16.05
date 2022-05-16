@@ -16,7 +16,9 @@ new_message = f"{word_a}{word_b}{word_c}"
 print(new_message)
 
 # Изменение стандартных параметров print()
-my_sep = " ?? "
-my_end = "ENDLINE"
-print(word_a, name, word_b, word_c, sep=my_sep, end=my_end)
-print(last_name, age, sep = "****")
+print("=======НЕПОВТОРИМЫЙ ОРИГИНАЛ============")
+print("a", "b", "c")
+print("d", "e", "f")
+print("=======ЖАЛКАЯ ПОРОДИЯ===================")
+print("a", "b", "c", sep=",", end="!!IT'S NEW LINE!!")
+print("d", "e", "f", sep="!", end="\n")
