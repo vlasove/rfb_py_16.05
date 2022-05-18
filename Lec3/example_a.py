@@ -3,6 +3,7 @@ alice1997 = "This is variable"
 petya1993 = "Это переменная"
 print(petya1993)
 
+
 last_name = "Johnson"
 
 # 8temp = 25 # Некорректно - не может начинаться с цифры!
