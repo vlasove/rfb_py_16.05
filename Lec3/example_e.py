@@ -12,7 +12,7 @@ result = name_str * 5 # name_str + name_str + name_str + name_str + name_str
 print(result) # Имеет смысл только при умножении на натуральное число
 
 # Взятие длины
-len_of_name = len(third_name * 3)
+len_of_name = len(third_name)
 print("Len:", len_of_name)
 
 # Нет типа char, есть только str

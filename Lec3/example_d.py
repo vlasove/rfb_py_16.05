@@ -12,3 +12,8 @@ print("Type:", type(value_float), "Value:", value_float)
 
 second_value_int = int(12.9999999) # отбрасывается вся десятичная часть!
 print("Type:", type(second_value_int), "Value:", second_value_int)
+
+
+# Вывод вещственного числа с точностью
+value = 817347.92843763281
+print(f"Value: {value: .5f}")
