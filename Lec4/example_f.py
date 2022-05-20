@@ -12,9 +12,9 @@
 
 age = int(input())
 
-if age <= 16: # Читается сверху-вниз, первый правильный и будет выполнен
+if age <= 14: # Читается сверху-вниз, первый правильный и будет выполнен
     print("Age <= 14")
-elif age >= 14 and age <= 18:
+elif age >= 15 and age <= 18:
     print("Age in [15, 18]")
 elif age > 18 and age <= 45:
     print('Age in [19, 45]')
