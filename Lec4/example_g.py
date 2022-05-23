@@ -14,5 +14,7 @@ elif sign == "-":
     print(a_float - b_float)
 elif sign == "*":
     print(a_float * b_float)
+elif sign == "/" and b_float != 0:
+    print(a_float / b_float)
 else:
-    print("НЕ ПОДДЕРЖИВАЕТСЯ")
+    print("СБОЙ")
