@@ -13,9 +13,11 @@ while True:
         break
 
     if numeric < MIN_VALUE:
+        print("Переопределение минимума:", numeric)
         MIN_VALUE = numeric
 
     if numeric > MAX_VALUE:
+        print("Переопределение максимума:", numeric)
         MAX_VALUE = numeric
 
 

@@ -1,7 +1,10 @@
 # Решение задачи K
 
 count = 0
-LOW_PULSE_LIMIT, HIGH_PULSE_LIMIT = 100, 140
+
+LOW_PULSE_LIMIT = 100
+HIGH_PULSE_LIMIT = 140
+
 MAX_PULSE, MIN_PULSE = 99, 141
 
 while True:
