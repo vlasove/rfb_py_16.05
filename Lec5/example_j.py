@@ -14,8 +14,8 @@
 # range(start, stop, step)
 # stop - это краевой параметр (т.е. итерации идут ДО НЕГО, не включая его самого)
 
-# for i in range(1, 10): # range(start, stop[, step=1)
-#     print("Another Value:", i)
+for i in range(1, 10): # range(start, stop[, step=1)
+    print("Another Value:", i)
 
 # При итерировании в сторону увеличения ОБЯЗАТЕЛЬНО:
 # * start < stop
