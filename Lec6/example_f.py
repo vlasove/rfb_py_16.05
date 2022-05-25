@@ -3,7 +3,7 @@ a_set = set([1, 2, 3, 4])
 b_set = set([3, 4, 5, 6])
 
 # Пересечение - общие элементы двух множеств
-c_set = a_set.intersection(b_set)
+c_set = a_set.intersection(b_set) 
 print("Intersection result:", c_set)
 
 
