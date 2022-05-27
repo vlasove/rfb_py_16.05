@@ -11,6 +11,5 @@ max_num = max(numeric_set)
 print("Max:", max_num)
 
 # Перебор элементов множества при помощи for
-numeric_set.add(-10000000)
 for elem in numeric_set: # Цикл for each
     print("Elem:", elem)
