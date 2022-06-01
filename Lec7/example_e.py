@@ -1,6 +1,5 @@
 # Срезы строк
 
-
 message = "Hello#world!"
 
 new_message = message[0] + message[1] + message[2] + message[3] + message[4]
@@ -19,9 +18,9 @@ print(b_slice)
 c_slice = message[5:] # От 5 индекса до конца
 print(c_slice)
 
-# Только с другим шагом
+# # Только с другим шагом
 b_slice = message[:8:2] # По умолчанию start = 0
-# От начала до 8 индекса (не включая) с шагом в 2
+# # От начала до 8 индекса (не включая) с шагом в 2
 print(b_slice)
 
 c_slice = message[8::3] # От 8 индекса
@@ -36,12 +35,12 @@ print(type(message[:-1:1]))
 print(message[::-1])
 
 
-# Итерирование по элементам среза через индексы
+# # Итерирование по элементам среза через индексы
 example_slice = message[::-2]
 for i in range(len(example_slice)):
     print(example_slice[i])
 
 
-# Строка - это итератор!
-for letter in message[::2]:
+# # Строка - это итератор!
+for letter in message[0:8]:
     print("Letter:", letter)
