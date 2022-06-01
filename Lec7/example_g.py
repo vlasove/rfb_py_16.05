@@ -14,8 +14,8 @@ print(".capitalize():", capitalize_msg)
 
 
 # Узнать, на каком индексе стоит символ (первое вхождение)
-if "W" in msg:
-    print("index():", msg.index("W"))
+if "L" in msg:
+    print("index():", msg.index("L"))
 
 # Узнать, сколько раз встрчечается та или иная подстрока
 print(".count():", msg.count("LL"))
