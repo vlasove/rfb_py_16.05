@@ -30,3 +30,5 @@ m = int(input().strip()) # Количество запрос к книге
 for _ in range(m):
     new_month = input().strip()
     print(" ".join(sorted(birthdays[new_month])))
+
+print("Total book:", birthdays)
