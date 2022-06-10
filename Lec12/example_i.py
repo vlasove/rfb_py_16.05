@@ -17,13 +17,10 @@ birthdays = {
 
 n = int(input().strip()) # Количество друзей для добавления в книгу
 for _ in range(n):
-    info = input().strip().split() # "Вася 10 май" -> ["Вася", "10", "май"]
-    name = info[0]
-    month = info[-1]
-
+    name, _, month = input().strip().split() # "Вася 10 май" -> ["Вася", "10", "май"]
     birthdays[month].append(name)
 
-m = int(input().strip()) # Количество запрос к книге
+m = int(input().strip()) # Количество запросов к книге
 for _ in range(m):
     names_in_month = birthdays[input().strip()]
     if len(names_in_month) == 0:
