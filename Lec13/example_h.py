@@ -12,10 +12,8 @@ def factorial(n):
 
 def combination(n, m):
     """
-    неправильное решение, показано, как использовать функцию, 
-    определенную ранее
     """
-    return factorial(n) // factorial(m)
+    return factorial(n) // (factorial(m) * factorial(n -m))
 
 
 n = int(input())
