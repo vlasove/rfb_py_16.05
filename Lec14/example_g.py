@@ -7,16 +7,16 @@
 *var  -
 """
 
-def add(x_arg:int, y_arg:int, *args:int) -> int:
+def add(x_arg:int, y_arg:int, *args :int):
     """
     args -> tuple(obj1,obj2,obj3, ....)
     """
     print(f"X:{x_arg}, Y:{y_arg}")
     print("Tuple?:", type(args))
-    print("Values?:", args)
+    print("Values?:", args, "And len:", len(args))
 
 
-def main() ->None:
+def main():
     """
     entry point
     """

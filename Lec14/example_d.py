@@ -2,7 +2,7 @@
 пример игнорирования default value arg
 """
 
-def add(x_arg:int = 1, y_arg :int = 2, z_arg :int =3):
+def add(x_arg = 1, y_arg = 2, z_arg =3):
     """
     description
     """

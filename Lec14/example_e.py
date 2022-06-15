@@ -4,17 +4,17 @@
     Означает, что последняя определенная функция является актуальной
 """
 
-def add(a, b):
-    """
-    description
-    """
-    return a + b
-
 def add(a, b ,c=100500):
     """
     description
     """
     return a + b + c 
+
+def add(a, b):
+    """
+    description
+    """
+    return a + b
 
 def main():
     """

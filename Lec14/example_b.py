@@ -2,6 +2,11 @@
 Аргументы со значением по умолчанию (Default Values Args)
 """
 
+def add(a = 0, b = 0):
+    print("a is:", a)
+    print("b is:", b)
+    return a ** 2 + b ** 3
+
 def shift(shifting, x_arg = 0.0, y_arg = 0.0):
     """
     shifting - абсолютное значение сдвига (обязательный параметр)
@@ -15,7 +20,13 @@ def main():
     """
     входная точка в приложение
     """
-    x, y = shift(10, x_arg=5)
+    print(add())
+    print(add(1))
+    print(add(b = 10))
+    print(add(1,2))
+    # print(add(1,2,3))
+    
+    x, y = shift(5,y_arg = 10)
     print(f"X:{x}, Y:{y}")
 
 main()

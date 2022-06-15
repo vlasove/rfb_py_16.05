@@ -8,6 +8,7 @@
 1.2) Познакомиться с модулем Typing
 """
 
+
 def add(a :int, b :int) -> int:
     """
     description.........
