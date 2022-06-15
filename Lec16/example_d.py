@@ -13,6 +13,7 @@ b = lambda x,y: x **2 + y**2
 urodstvo = [b, add, a]
 urodstvo.sort(key=lambda f: f(1,2))
 print(urodstvo)
+
 for func in urodstvo:
     print(func(10, 20))
 
