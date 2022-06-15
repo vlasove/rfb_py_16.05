@@ -3,19 +3,19 @@
 где зарезервированы команды необходимые для ВЫЗОВА функции
 """
 
-def add(first_arg:int, second_arg:int):
+def add(first_arg:int, second_arg:int) ->int:
     """
     description
     """
     return first_arg** 2 + second_arg**2
 
-def sub(first_arg:int, second_arg:int):
+def sub(first_arg:int, second_arg:int) ->int:
     """
     description
     """
     return first_arg - second_arg
 
-def trivial_calc(first_arg:int, second_arg:int, func):
+def trivial_calc(first_arg:int, second_arg:int, func) -> int:
     """
     description
     """
@@ -32,7 +32,7 @@ def choose_operation(sign:str):
     else:
         return add
 
-def main():
+def main() -> None:
     """
     description
     """
@@ -48,6 +48,10 @@ def main():
 
     print("trivial_calc(2,3, add):", trivial_calc(2,3,add))
     print("trivial_calc(2,3, sub):", trivial_calc(2,3,sub))
+
+    res = choose_operation("+")
+    print("Result choose operation:", res)
+    print("Result of result:", res(12,13))
 
     print(choose_operation("+")(12, 13))
     print(choose_operation("-")(12, 13))
