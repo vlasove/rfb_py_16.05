@@ -10,7 +10,7 @@
 # import example_a
 
 
-def add(x_arg: int, y_arg: int):
+def add(x_arg: int, y_arg: int) -> int:
     """
     ОПИСАНИЕ:
         Арифметическое сложение аргументов
@@ -23,7 +23,7 @@ def add(x_arg: int, y_arg: int):
     return x_arg + y_arg
 
 
-def sub(x_arg, y_arg):
+def sub(x_arg, y_arg) -> int:
     """
     ОПИСАНИЕ:
         Арифметическое вычитание аргументов
@@ -36,7 +36,7 @@ def sub(x_arg, y_arg):
     return x_arg - y_arg
 
 
-def mult(x_arg, y_arg):
+def mult(x_arg, y_arg) -> int:
     """
     ОПИСАНИЕ:
         Арифметическое умножение аргументов
@@ -49,7 +49,7 @@ def mult(x_arg, y_arg):
     return x_arg * y_arg
 
 
-def div(x_arg, y_arg):
+def div(x_arg, y_arg) -> int:
     """
     ОПИСАНИЕ:
         Арифметическое целочисленное деление аргументов
@@ -62,7 +62,7 @@ def div(x_arg, y_arg):
     return x_arg // y_arg
 
 
-def main():
+def main() -> None:
     """Основная точка входа в приложение."""
     first_arg, second_arg = int(input().strip()), int(input().strip())
     result = (
