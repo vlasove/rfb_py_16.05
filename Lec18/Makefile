@@ -1,12 +1,12 @@
 .PHONY: format, lint, check
 
 format:
-	black example_b.py && docformatter -i example_b.py && isort example_b.py
+	black example_c.py && docformatter -i example_c.py && isort example_c.py
 
 lint:
-	pylint example_b.py
+	pylint example_c.py
 
 check:
-	mypy example_b.py
+	mypy example_c.py
 
 .DEFAULT_GOAL := format

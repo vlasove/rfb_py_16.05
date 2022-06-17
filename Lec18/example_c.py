@@ -1,16 +1,16 @@
 """Модуль содержащий набор простейших арифметических функций, содержащий как их
 реализацию, так и использование для вычисления нетривиального выражения."""
+# import math
+# import os
+# import sys
 
-import os
-from typing import Any
+# from flask import Flask
+# from pandas import DataFrame
 
-from pandas import DataFrame
-from pymongo import MongoClient
-
-import example_c
+# import example_a
 
 
-def add(x_arg: int, y_arg: int) -> int:
+def add(x_arg: int, y_arg: int):
     """
     ОПИСАНИЕ:
         Арифметическое сложение аргументов
@@ -18,12 +18,12 @@ def add(x_arg: int, y_arg: int) -> int:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
     return x_arg + y_arg
 
 
-def sub(x_arg: int, y_arg: int) -> int:
+def sub(x_arg, y_arg):
     """
     ОПИСАНИЕ:
         Арифметическое вычитание аргументов
@@ -31,12 +31,12 @@ def sub(x_arg: int, y_arg: int) -> int:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
-    return x_arg + y_arg
+    return x_arg - y_arg
 
 
-def mult(x_arg: int, y_arg: int) -> int:
+def mult(x_arg, y_arg):
     """
     ОПИСАНИЕ:
         Арифметическое умножение аргументов
@@ -44,26 +44,26 @@ def mult(x_arg: int, y_arg: int) -> int:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
     return x_arg * y_arg
 
 
-def div(x_arg: int, y_arg: int) -> int:
+def div(x_arg, y_arg):
     """
     ОПИСАНИЕ:
-        Арифметическое деление целочисленных аргументов
+        Арифметическое целочисленное деление аргументов
     ПАРАМЕТРЫ:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
     return x_arg // y_arg
 
 
-def main() -> None:
-    """entry point."""
+def main():
+    """Основная точка входа в приложение."""
     first_arg, second_arg = int(input().strip()), int(input().strip())
     result = (
         add(first_arg, second_arg)
