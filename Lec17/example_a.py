@@ -5,8 +5,7 @@ example_a:
     * переменной (1 шт)
     * каким-то куском кода, который использует функцию и переменную
 """
-# import example_b as ex
-# print(ex.MAX_ATTEMPTS)
+
 
 def add(x_arg:int, y_arg:int):
     """
@@ -17,7 +16,14 @@ def add(x_arg:int, y_arg:int):
 
 MAX_ATTEMPTS = 10
 
+# 2. Как сделать так, чтобы
+# данный фрагмент кода выполнялся только
+# при прямом запуске данного модуля? А при импортировании
+# этого модуля - код ниже игнорировался?
 def run():
+    """
+    entry point
+    """
     for i in range(MAX_ATTEMPTS):
         print("Res:", add(i, i + MAX_ATTEMPTS))
         if i > 3 :

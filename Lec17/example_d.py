@@ -3,8 +3,8 @@
 Пакет - группа модулей, схожих по своему функционалу (дополняющих друг друга)
 __init__.py - модуль, который подскажет интерпретатору, что перед ним ТОЧНО пакет
 """
-from geometry import rectangle as rect
-from geometry.circle import perimeter, area
+from geometry import rectangle as rect # Разделяющая область имен
+from geometry.circle import perimeter, area # Совмещающая область имен
 
 # Работа с прямоугольником
 a, b = 10, 20
