@@ -4,6 +4,7 @@
 
 fh = open(file="input.txt", mode="r")
 lines = fh.readlines()
+print(lines)
 for line in lines:
     print(line.strip())
 fh.close()

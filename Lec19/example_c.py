@@ -6,7 +6,7 @@ fh = open(file="input.txt", mode="r", encoding="cp1251")
 
 line = fh.readline()
 line_num = 1
-while line != "":
+while line != "": # EOF
     print(f"Num:{line_num}, Content: {line.strip()}")
     line_num += 1
     line = fh.readline()

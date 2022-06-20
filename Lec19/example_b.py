@@ -5,3 +5,7 @@
 with open(file="input.txt", mode="r") as fh:
     content = fh.read()
     print("Content:", content)
+    print(fh.readable())
+
+print(fh)
+# print(fh.readable())

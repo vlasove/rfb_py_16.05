@@ -2,10 +2,16 @@
 Считывание файла целиком
 """
 
+# import pathlib
+
 fh = open(file="input.txt", mode="r")
+# print("file handler:", type(fh))
+# print("file handler value:", fh)
 
 content = fh.read()
 print("Content:", content)
+content2 = fh.read() # Потворное считывание продолжается с момента остановки предыдущего
+print("Content 2:", content2)
 
 fh.close()
 
